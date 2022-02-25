@@ -1,0 +1,33 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace shivam_sharma
+{
+   
+    internal class Program
+    {
+        
+        static   int myclass(int a,int b)
+        {
+            int x = a + b;
+            return x;
+        }
+        static void per(int x)
+        {
+         Console.WriteLine(x);
+        }
+        static void Main(string[] args)
+        {
+        
+           
+         int b= myclass(54,85);
+           
+           Console.WriteLine(b);s
+            Console.ReadLine();  
+           
+        }
+    }
+}

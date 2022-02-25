@@ -1,0 +1,46 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace ConsoleApp24
+{
+    public class employee
+    {
+        public int salary;
+        public int id;
+        public string name;
+
+        public void employeedetail()
+        {  
+            Console.WriteLine("salary is=" + salary);
+            Console.WriteLine("ID is=" +id );
+            Console.WriteLine("Name is=" + name);
+
+        }
+
+    }
+     internal class program
+     {
+
+            static void Main(string[] args)
+            {
+                employee obj=new employee();
+            obj.name = "shivam sharma";
+            obj.salary = 200000;
+            obj.id = 2034;
+          
+            obj.employeedetail();
+            Console.ReadLine();
+            
+
+
+
+
+            }
+   
+    
+    }
+    
+}

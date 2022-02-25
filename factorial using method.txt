@@ -1,0 +1,30 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace ConsoleApp16
+{
+    class Program
+    { 
+       static void add()
+       {    
+            
+            int i=1;
+            int fact =1 ;
+            while (i <= 5)
+            {
+                fact = fact * i;
+                Console.WriteLine("the factoril numbers = "+fact);
+                i++;
+            }
+       }
+        static void Main(string[] args)
+        { 
+          
+         add();
+         Console.ReadLine(); 
+        }
+    }
+}

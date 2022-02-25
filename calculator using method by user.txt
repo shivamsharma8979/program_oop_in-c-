@@ -1,0 +1,31 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace ConsoleApp22
+{
+    class Program
+    {
+        public void cal(double a, double b)
+        {
+            Console.WriteLine("adding is = " + (a + b));
+            Console.WriteLine("subtract is = "  + ( a - b));
+            Console.WriteLine("multipilaction is =" + (a * b));
+            Console.WriteLine( "divided is =" +  (a / b));
+            Console.WriteLine( "module is = " +  (a % b));
+        }
+        static void Main(string[] args)
+        {
+            Console.Write(" enter the calculator  a = ");
+            //  Console.Write(" enter the calculator = ");
+            double r=int .Parse(Console.ReadLine());
+            Console.Write(" enter the calculator b = ");
+            double z = int.Parse(Console.ReadLine());
+            Program k=new Program();
+            k.cal(r, z);
+            Console.ReadLine();
+        }
+    }
+}

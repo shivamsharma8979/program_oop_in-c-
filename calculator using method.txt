@@ -1,0 +1,42 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace ConsoleApp14
+{
+    internal class Program
+    {
+        static void add(int a,int b)
+        {
+            int c = a + b;
+            Console.WriteLine(c);
+            Console.ReadLine();
+        }
+        static void sub(int a, int b)
+        {
+            int c = a - b;
+            Console.WriteLine(c);
+            Console.ReadLine();
+        }
+        static void mul(int a, int b)
+        {
+            int c = a * b;
+            Console.WriteLine(c);
+            Console.ReadLine();
+        }
+        static void div(int a, int b)
+        {
+            int c = a / b;
+            Console.WriteLine(c);
+            Console.ReadLine();
+        }
+        static void Main(string[] args)
+        {
+         
+            add(2,4);
+            mul(2,4);   
+        }
+    }
+}

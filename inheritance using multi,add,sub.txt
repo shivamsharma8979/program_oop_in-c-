@@ -1,0 +1,56 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace ConsoleApp24
+{ 
+   public  class A
+    {
+       public  int a;
+       public int b;
+       public int result;
+        public void add(int a,int b)
+        {
+          
+            result = a+b;
+            Console.WriteLine(result);
+ 
+        }
+    }
+  public  class B:A
+    {
+        public void mult(int a, int b)
+        {
+           result = a * b;
+           Console.WriteLine(result);
+
+        }
+    }
+    public class C:B
+    {
+        public void sub(int a, int b)
+        {
+            result = a - b;
+            Console.WriteLine(result);
+        }
+    }
+
+    internal class program
+     {
+            static void Main(string[] args)
+            {
+
+            C obj = new C();
+            obj.add(4, 5);
+            obj.mult(4, 5);
+            obj.sub(10, 5);
+
+            Console.ReadLine();  
+            }
+   
+    
+     }
+    
+}

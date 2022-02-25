@@ -1,0 +1,34 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace ConsoleApp21
+{
+    class m
+    {
+        public void table()
+        {
+            int t = 1;
+            Console.WriteLine("enter number");
+            int n = int.Parse(Console.ReadLine());
+            for (int i = 1; i <= 10; i++)
+            {
+                t = n * i;
+                Console.WriteLine(t);
+
+            }
+
+        }
+    }
+    class progam
+    { 
+        static void Main(string[] args)
+        { 
+            m n=new m();
+           n.table();
+            Console.ReadLine();
+        }
+    }
+}

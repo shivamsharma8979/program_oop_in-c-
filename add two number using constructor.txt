@@ -1,0 +1,31 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace shivamsharma 
+{
+    class myclass
+    {
+        public  myclass(int a ,int b)
+        {
+            int c = a + b;
+            Console.WriteLine("the sum of two numbers =" + c);
+            Console.WriteLine("press enter to exit !");
+            Console.ReadKey();
+        }
+    }
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.WriteLine("welcome to my program !");
+            Console.Write("enter value g =");
+            int g=int.Parse(Console.ReadLine());
+            Console.Write("enter value f = ");
+            int f = int.Parse(Console.ReadLine());
+            myclass n = new myclass(g,f);
+        }
+    }
+}

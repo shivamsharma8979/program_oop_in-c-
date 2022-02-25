@@ -1,0 +1,50 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace ConsoleApp16
+{
+    internal class Class1
+    {
+        public string name;
+        public int id;
+        public int age;
+        public string departmant; 
+
+        public void getvalue(string name, int id, int age, string departmant)
+        {
+            this.name = name;
+            this.id = id;
+            this.age = age;
+            this.departmant = departmant;
+
+            Console.WriteLine("name:{0} id:{1} age: {2} departmant:{3} ", this.name,this.id,this.age,this.departmant);
+        }
+
+       }
+  class Program
+    { 
+    
+        static void Main(string[] args)
+        {
+            Console.WriteLine("eter your name ?");
+            string r = Console.ReadLine();
+            Console.WriteLine("enter your id number ?");
+            int p = int.Parse(Console.ReadLine());
+            Console.WriteLine("enter your Age?");
+            int m = int.Parse(Console.ReadLine());
+            Console.WriteLine("enter your departmant name;");
+            string  t =Console.ReadLine();
+
+            Class1 q =new Class1();
+               q.getvalue(r,p,m,t);
+       
+            Console.ReadLine(); 
+        }
+    }
+}
+        
+ 
+

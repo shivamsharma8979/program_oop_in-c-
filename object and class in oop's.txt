@@ -1,0 +1,26 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace ConsoleApp24
+{
+    class car
+    {
+
+        public void Name()
+        {
+            string name = "red";
+            Console.WriteLine(name);
+        }
+        internal class program
+        {
+            static void Main(string[] args)
+            {
+                car c = new car();
+                c.Name();
+            }
+        }
+    }
+}

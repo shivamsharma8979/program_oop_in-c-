@@ -1,0 +1,32 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace ConsoleApp16
+{
+    class Program
+    { 
+      public int add(int n, int i=1)
+       {     
+            int fact =1 ;
+            while (i <= n)
+            {
+                fact = fact * n;
+               
+                i++;
+                return fact;
+            }
+       }
+        static void Main(string[] args)
+        {
+            Console.WriteLine("enter number");
+            int m = int.Parse(Console.ReadLine());
+            Program r=new Program();
+       int k=     r.add(m);
+            Console.WriteLine(k);
+            Console.ReadLine(); 
+        }
+    }
+}

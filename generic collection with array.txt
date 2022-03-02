@@ -1,0 +1,41 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace ConsoleApp1
+{ 
+     class  myclass
+     {
+        public void array<T>(T [] a)
+
+        {
+          foreach(T x in a)
+            {
+                Console.WriteLine(x);
+            }
+        }
+     }
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            int [] data = new int[4];
+            data[0] = 24;
+            data[1] = 29;
+             data[2] = 28;
+            data[3] = 25;
+            myclass obj = new myclass();
+            obj.array(data);
+            string[] data1 = new string[4];
+            data1[0] = "shivam programer ";
+            data1[1] = "bijendra  rajput programer";
+            data1[2] = "naman diwakar";
+            data1[3] = "aman mishra";
+            myclass obj1 = new myclass();
+            obj1.array(data1);
+            Console.ReadKey();
+        }
+    }
+}

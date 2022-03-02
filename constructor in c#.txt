@@ -1,0 +1,24 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace ConsoleApp21
+{
+    public class employee
+    {
+        public employee()
+        {
+            Console.WriteLine("shivam sharma ");
+        }
+        internal class Program
+        {
+            public static void Main(string[] args)
+            {
+                employee m = new employee();
+                Console.ReadLine();
+            }
+        }
+    }
+}

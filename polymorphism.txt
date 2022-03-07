@@ -1,0 +1,44 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace ConsoleApp3
+{
+    class a
+    {
+        public virtual void m()
+        {
+            Console.WriteLine("hello");
+        }
+    }
+    class b : a
+    {
+        public override void m()
+        {
+            Console.WriteLine("hye");
+        }
+    }
+    class c : a
+    {
+        public override void m()
+        {
+            Console.WriteLine("bye");
+        }
+    }
+   
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            a obj= new a();
+            a obj1 = new b();
+            a obj2 = new c();   
+            obj.m();
+            obj1.m();
+            obj2.m();
+            Console.ReadLine(); 
+        }
+    }
+}

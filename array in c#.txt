@@ -1,0 +1,34 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace ConsoleApp3
+{ 
+    class myclass
+    {
+        public void mymethod()
+        {
+            int[] arr = { 1, 2, 4, 5, 7, 8, 6, 5, 4 };     
+            foreach (int i in arr)
+            {
+                Console.WriteLine(i);
+            }
+            Console.WriteLine("the sum of all array numbers is =" + arr.Sum());
+            Console.WriteLine("the minimum value is =" + arr.Min());
+            Console.WriteLine("the maxmimum is = " + arr.Max());
+            Console.WriteLine(arr.Length);
+            Console.WriteLine(arr.Count());
+        }
+    }
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            myclass obj = new myclass();
+            obj.mymethod();
+            Console.ReadLine();
+        }
+    }
+}
